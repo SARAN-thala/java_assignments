@@ -13,4 +13,4 @@ public class MatrixTest {
     int actual[][] = matrix.addMatricies(t1,t2);
     assertArrayEquals(actual, expected);
   }
-}
+};
