@@ -8,24 +8,24 @@ public class WordCount {
         this.text = text;
     }
 
-    public int countWord(String word) {
-        if (word == null) return 0;
-        return word.isEmpty() ? 0 : word.split("\\s+").length;
+    public int countWord() {
+        if (this.text == null) return 0;
+        return this.text.isEmpty() ? 0 : this.text.split("\\s+").length;
     }
 
-    public int countLine(String word) {
-        if (word == null) return 0;
-        return word.isEmpty() ? 0 : "\\n".split(word).length;
+    public int countLine() {
+        if (this.text == null) return 0;
+        return this.text.isEmpty() ? 0 : "\\n".split(this.text).length;
     }
 
-    public int countChar(String word) {
-        if (word == null) return 0;
-        return word.isEmpty() ? 0 : word.split("").length;
+    public int countChar() {
+        if (this.text == null) return 0;
+        return this.text.isEmpty() ? 0 : this.text.split("").length;
     }
 
-    public int countBytes(String word) {
-        if (word == null) return 0;
-        final byte[] count = word.getBytes(UTF8_CHARSET);
+    public int countBytes() {
+        if (this.text == null) return 0;
+        final byte[] count = this.text.getBytes(UTF8_CHARSET);
         return count.length;
     }
 }
