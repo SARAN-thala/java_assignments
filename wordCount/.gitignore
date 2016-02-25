@@ -1,5 +1,4 @@
+/out
 /.idea
 /wordCount.iml
-lib/*
-out/*
-.idea/*
+/lib
