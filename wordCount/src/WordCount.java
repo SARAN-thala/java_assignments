@@ -15,7 +15,7 @@ public class WordCount {
 
     public int countLine() {
         if (this.text == null) return 0;
-        return this.text.isEmpty() ? 0 : "\\n".split(this.text).length;
+        return this.text.isEmpty() ? 0 : this.text.split("\\n").length;
     }
 
     public int countChar() {
